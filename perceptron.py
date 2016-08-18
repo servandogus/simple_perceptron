@@ -50,9 +50,12 @@ def learn_errorMinimisationGradientMethod(S,w,eps,iteration):
     return w
             
     
-#
+# *****************
+# TEST
+# *****************
 S=[("1111110",0),("0110000",1),("1101101",0),("1111001",1),("0110011",0),("1011011",1),("0011111",0),("1110000",1),("1111111",0),("1111011",1)]
 
+# ajout d'une entrée toujours active pour le bias :
 for i in range( len(S) ):
     S[i] = ("1"+ S[i][0] , S[i][1])
     
